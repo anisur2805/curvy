@@ -26,6 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function curvy_curvy_block_init() {
 	register_block_type( __DIR__ . '/build/blocks/curvy' );
+	register_block_type( __DIR__ . '/build/blocks/clicky-group' );
+	register_block_type( __DIR__ . '/build/blocks/clicky-button' );
 	add_filter(
 		'block_categories_all',
 		'curvy_block_categories'

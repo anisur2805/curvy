@@ -12,6 +12,8 @@ $top_flip_x    = $attributes['topFlipX'];
 $top_flip_y    = $attributes['topFlipY'];
 $bottom_flip_x = $attributes['bottomFlipX'];
 $bottom_flip_y = $attributes['bottomFlipY'];
+$height        = $attributes['height'];
+$width         = $attributes['width'];
 $top_color     = $attributes['topColor'];
 
 // wp_send_json( $is_bottom );

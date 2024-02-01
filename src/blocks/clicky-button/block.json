@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/clicky-button",
+	"version": "0.1.0",
+	"title": "Clicky Button",
+	"category": "curvy",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true,
+			"link": false,
+			"enableContrastChecker": true
+		},
+		"spacing": {
+			"padding": true
+		}
+	},
+	"attributes": {
+		"buttonLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"style": {
+			"type": "object",
+			"default": {
+				"color": {
+					"background": "#000000",
+					"text": "#fff"
+				},
+				"spacing": {
+					"padding": {
+						"top": "15px",
+						"bottom": "15px",
+						"left": "15px",
+						"right": "15px"
+					}
+				}
+			}
+		}
+	},
+	"textdomain": "clicky-button",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php",
+	"parent": [
+		"create-block/clicky-group"
+	]
+}
