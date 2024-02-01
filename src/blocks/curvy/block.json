@@ -4,10 +4,9 @@
 	"name": "create-block/curvy",
 	"version": "0.1.0",
 	"title": "Curvy Block",
-	"category": "widgets",
+	"category": "curvy",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
-	"example": {},
 	"supports": {
 		"html": false,
 		"color": {
@@ -18,6 +17,40 @@
 		"spacing": {
 			"padding": true
 		}
+	},
+	"variations": [
+		{
+			"name": "top-only",
+			"title": "Curvy - Top Only",
+			"attributes": {
+				"enableTopCurved": true,
+				"enableBottomCurved": false
+			}
+		},
+		{
+			"name": "bottom-only",
+			"title": "Curvy - Bottom Only",
+			"attributes": {
+				"enableTopCurved": false,
+				"enableBottomCurved": true
+			}
+		}
+	],
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "core/heading",
+				"attributes": {
+					"content": "Curvy Block"
+				}
+			},
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "This is a learning purpose block."
+				}
+			}
+		]
 	},
 	"attributes": {
 		"style": {
@@ -37,14 +70,15 @@
 			}
 		},
 		"enableTopCurved": {
-			"type": "boolean"
+			"type": "boolean",
+			"default": true
 		},
 		"topWidth": {
-			"type":"number",
+			"type": "number",
 			"default": 100
 		},
 		"topHeight": {
-			"type":"number",
+			"type": "number",
 			"default": 100
 		},
 		"topFlipX": {
@@ -68,19 +102,20 @@
 			"default": false
 		},
 		"enableBottomCurved": {
-			"type": "boolean"
+			"type": "boolean",
+			"default": true
 		},
 		"bottomWidth": {
-			"type":"number",
+			"type": "number",
 			"default": 100
 		},
 		"bottomHeight": {
-			"type":"number",
+			"type": "number",
 			"default": 100
 		},
 		"bottomColor": {
 			"type": "string",
-			"default": "#ec4899"
+			"default": "#f8f8f8"
 		},
 		"isBottom": {
 			"type": "boolean",

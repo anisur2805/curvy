@@ -26,5 +26,21 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function curvy_curvy_block_init() {
 	register_block_type( __DIR__ . '/build/blocks/curvy' );
+	add_filter(
+		'block_categories_all',
+		'curvy_block_categories'
+	);
 }
 add_action( 'init', 'curvy_curvy_block_init' );
+
+function curvy_block_categories( $categories ) {
+	return array_merge(
+		$categories,
+		array(
+			array(
+				'slug'  => 'curvy',
+				'title' => 'Curvy',
+			),
+		)
+	);
+}
