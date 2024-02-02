@@ -20,9 +20,16 @@
     }
   },
   "attributes": {
-    "buttonLabel": {
+    "postType": {
       "type": "string",
       "default": ""
+    },
+    "linkedPost": {
+      "type": "number"
+    },
+    "buttonLabel": {
+      "type": "string",
+      "default": "Learn More"
     },
     "style": {
       "type": "object",

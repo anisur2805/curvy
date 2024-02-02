@@ -10,5 +10,5 @@ import icon from "./images/clicky.svg";
 registerBlockType(metadata.name, {
 	edit,
 	save,
-		icon: <img src={icon} alt="Curvy icon" width={16} />,
+	icon: <img src={icon} alt="Curvy icon" width={16} />,
 });

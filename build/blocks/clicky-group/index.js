@@ -107,19 +107,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Edit(props) {
-  console.log(props);
-  console.log({
-    props
-  });
-  const blockGap = (0,_utiles_utiles__WEBPACK_IMPORTED_MODULE_3__.parseValue)(props.attributes.style.spacing.blockGap);
+  const blockGap = (0,_utiles_utiles__WEBPACK_IMPORTED_MODULE_3__.parseValue)(props.attributes?.style?.spacing?.blockGap);
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
     style: {
       gap: blockGap,
       justifyContent: props.attributes.justifyContent
     }
-  });
-  console.log({
-    blockGap
   });
   const _useInnerBlocksProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useInnerBlocksProps)(blockProps, {
     template: [["create-block/clicky-button", {}]],
@@ -207,7 +200,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   parseValue: () => (/* binding */ parseValue)
 /* harmony export */ });
 const parseValue = value => {
-  if (value.indexOf("var:") === 0) {
+  if (value?.indexOf("var:") === 0) {
     const varValue = value.split(":")[1].split("|").join("--");
     return `var(--wp--${varValue})`;
   }
