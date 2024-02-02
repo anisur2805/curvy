@@ -31,8 +31,13 @@ final class Curvy {
 			'init',
 			function () {
 				register_block_type( __DIR__ . '/build/blocks/curvy' );
+
 				register_block_type( __DIR__ . '/build/blocks/clicky-group' );
 				register_block_type( __DIR__ . '/build/blocks/clicky-button' );
+
+				register_block_type( __DIR__ . '/build/blocks/piccyGallery' );
+				register_block_type( __DIR__ . '/build/blocks/piccyImage' );
+
 				add_filter(
 					'block_categories_all',
 					function ( $categories ) {
