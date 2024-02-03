@@ -68,7 +68,7 @@ export default function Edit(props) {
 										<ImageThumbnail
 										key={block.clientId}
 										imageId={block.attributes.imageId}
-										className={`${
+										className={`piccy-gallery-thumb ${
 											block.attributes.imageId === previewImageId.imageId ? "selected" : ""
 										}`}
 										onClick={() => {

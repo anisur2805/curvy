@@ -78,7 +78,7 @@ function Edit(props) {
   }, (innerBlocks || []).map(block => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_imageThumbnail__WEBPACK_IMPORTED_MODULE_9__.ImageThumbnail, {
     key: block.clientId,
     imageId: block.attributes.imageId,
-    className: `${block.attributes.imageId === previewImageId.imageId ? "selected" : ""}`,
+    className: `piccy-gallery-thumb ${block.attributes.imageId === previewImageId.imageId ? "selected" : ""}`,
     onClick: () => {
       console.log(block.attributes.imageId, block.clientId);
       setPreviewImageId({
@@ -298,7 +298,7 @@ module.exports = window["wp"]["i18n"];
   \********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/piccy-gallery","version":"0.1.0","title":"Piccy Gallery","category":"curvy","icon":"images-alt2","description":"This is a piccy gallery block","supports":{"html":false},"attributes":{},"textdomain":"piccy-gallery","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/piccy-gallery","version":"0.1.0","title":"Piccy Gallery","category":"curvy","icon":"images-alt2","description":"This is a piccy gallery block","supports":{"html":false},"attributes":{},"textdomain":"piccy-gallery","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php","script":"file:./script.js"}');
 
 /***/ })
 
